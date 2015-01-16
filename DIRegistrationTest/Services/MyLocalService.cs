@@ -2,7 +2,7 @@
 
 namespace DIRegistrationTest.Services
 {
-    [DependencyInjectionRegister(RegistrationType = RegistrationTypeEnum.Singleton)]
+    [DependencyInjectionRegister(RegistrationTypeEnum.Singleton)]
     public class MyLocalService : ILocalService
     {
         public string GuessWhat()

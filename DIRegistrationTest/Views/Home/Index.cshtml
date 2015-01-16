@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" style="padding:15px">
+    <h1>DI auto-register sample</h1>
+    <p class="lead">
+        _myService.SayHello() returns: <b>@ViewBag.myServiceResult</b><<br />
+        _anotherService.GuessWhat() returns: <b>@ViewBag.anotherServiceResult</b>
+    </p>
+    <p lcass="lead">
+        The library has been made
+        for teaching purposes and it's missing some features you might actually need in a "real world" library.
+    </p>
+    <p><a href="http://bitbucket.org/joanvilarino/diautoregistrationformvc" class="btn btn-primary btn-lg">Download project &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Multi-engine supported</h2>
+        <p>
+            The project has multi IoC framework engine support, by implementing the interface 'IDependencyInjectionEngine'.
+        </p>
+        <p>
+            From scratch there are three engines avialable. <a href="http://autofac.org/" target="_blank">Autofac</a>, 
+            <a href="http://www.ninject.org/" target="_blank">nInject</a> and 
+            <a href="https://unity.codeplex.com/" target="_blank">Unity</a>. feel free to add more if you need
+               them.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>External Assembly support</h2>
+        <p>Sometimes you don't want to add references in your projects to some or any external libraries. With regular 
+            dependency injection implementations, you need to have all the libraries in References in order to be able to 
+            register them in your IoC container. This library allows you to use a filter to load .dll or .exe files in your
+            app directory and use them in your dependency injection</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Automatic controller registration</h2>
+        <p>
+            This library has been made for MVC5 (or lower if you change the target packages used). It will register all the 
+            "Controller" derived classes in your project automatically. If you need to make this library to work with non-MVC
+            solutions, you'd only need to add support for 'Resolve'.
+        </p>
+        <p>
+            Of course, since it's a demo solution, there are tons of functionalities that are not present and should be
+            made by you if you plan to use it, but it's a good start point.
+        </p>
+    </div>
+</div>

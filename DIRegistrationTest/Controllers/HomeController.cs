@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using DependencyInjection.ServiceLibrary.Classes;
 using DIRegistrationTest.Services;
 using DITest.Contracts.Interfaces;
 

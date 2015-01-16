@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\DependencyInjectionIgnoreAttribute.cs" />
     <Compile Include="Classes\DependencyInjectionRegisterAttribute.cs" />
     <Compile Include="Classes\RegistrationTypeEnum.cs" />
     <Compile Include="Interfaces\IDependencyInjectionEngine.cs" />

@@ -5,8 +5,8 @@ namespace DependencyInjectionAutoRegister.Entities
 {
     public class DependencyInjectionSetting
     {
-        public Func<string,bool> ReferencedAssemblyFilter { get; set; } 
-        public Func<string,bool> NonReferencedAssemblyFilter { get; set; }
-        public List<Type> ClassesToRegister { get; set; }
+        public List<string> AssemblyFilter { get; set; } 
+        public List<string> ExternalAssemblyFilter { get; set; }
+        public List<Type> ClassesForcedToRegister { get; set; }
     }
 }
